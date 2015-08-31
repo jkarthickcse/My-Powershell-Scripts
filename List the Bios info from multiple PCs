@@ -1,0 +1,1 @@
+Get-Wmiobject -Class Win32_Bios -Computername (Get-content c:\users\karthick.karthi\documents\computers.txt)
