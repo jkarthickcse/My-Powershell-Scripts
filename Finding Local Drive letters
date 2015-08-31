@@ -1,0 +1,1 @@
+Get-Wmiobject -class win32_logicaldisk | select-object -Property deviceID
