@@ -1,0 +1,1 @@
+Get-Hotfix -Description Security* | Select-object -Property PSComputername,Description,HotfixID,Installedon
