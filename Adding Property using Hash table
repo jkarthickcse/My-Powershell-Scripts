@@ -1,0 +1,30 @@
+Alias.csv  
+login,dept,city,title
+DonJ,IT,Las Vegas,CTO
+Gregs,Custodial,Denver,Janitor
+JeffH,IT,Syracuse,Network Engineer
+
+Powershell Script:
+Import-Csv D:\alias.csv |
+Select-Object -Property *,
+@{name='username';expression={$_.login}} |
+Out-File D:\result.csv
+
+OutPut:
+login    : DonJ
+dept     : IT
+city     : Las Vegas
+title    : CTO
+username : DonJ
+
+login    : Gregs
+dept     : Custodial
+city     : Denver
+title    : Janitor
+username : Gregs
+
+login    : JeffH
+dept     : IT
+city     : Syracuse
+title    : Network Engineer
+username : JeffH
