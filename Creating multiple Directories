@@ -1,0 +1,5 @@
+$Folders = Get-Content "D:\test.txt"
+ForEach ($Folder in $Folders )
+{
+New-Item  $Folder -ItemType directory
+}
