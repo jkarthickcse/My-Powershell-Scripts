@@ -1,0 +1,1 @@
+Get-ADComputer -Filter * -Property * -Searchbase "CN=Computers,DC=KARTHI,DC=COM | Format-Table name,OperatingSystem,OperatingSystemversion,LastLogondate,IPv4Address,Created | out-file c:\ADComputers.csv
